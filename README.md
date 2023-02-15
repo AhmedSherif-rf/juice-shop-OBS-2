@@ -95,6 +95,6 @@ kubectl get nodes
 ```
 kubectl get cs
 
-
+```
 ## Create a Kubernetes deployment
 
