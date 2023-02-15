@@ -94,3 +94,7 @@ kubectl get nodes
 ##### Get component status
 ```
 kubectl get cs
+
+
+## Create a Kubernetes deployment
+
