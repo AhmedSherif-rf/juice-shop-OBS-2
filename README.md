@@ -96,6 +96,28 @@ kubectl get nodes
 kubectl get cs
 
 ```
-## Create a Kubernetes deployment
+## To restricted the access to the kubernetes for ip addresses
+#### Create a Network Policy and allows ingress traffic only from the IP addresses 10.0.0.1 and 10.0.0.2
 ```
-First, create a Kubernetes deployment for the Juice Shop application using the 'bkimminich/juice-shop' Docker image:
+kubectl apply -f kubernetes-api-access.yaml
+```
+
+
+
+## Create a Kubernetes deployment
+#### First, create a Kubernetes deployment for the Juice Shop application using the 'bkimminich/juice-shop' Docker image:
+```
+kubectl apply -f juice-shop-deployment.yaml
+```
+## Create a Kubernetes Service
+####Next, create a Kubernetes Service to expose the Juice Shop deployment internally:
+```
+kubectl apply -f juice-shop-service.yaml
+```
+## Create a Kubernetes Ingress
+#### Now create a Kubernetes Ingress to expose the Juice Shop application externally
+```
+kubectl apply -f juice-shop-ingress.yaml
+```
+
+
