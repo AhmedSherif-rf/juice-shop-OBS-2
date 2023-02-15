@@ -97,4 +97,5 @@ kubectl get cs
 
 ```
 ## Create a Kubernetes deployment
-
+```
+First, create a Kubernetes deployment for the Juice Shop application using the 'bkimminich/juice-shop' Docker image:
