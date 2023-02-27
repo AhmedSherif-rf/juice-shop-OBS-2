@@ -5,8 +5,10 @@ metadata:
 spec:
   selector:
     app: juice-shop
+  type: NodePort
   ports:
   - name: http
     port: 80
     targetPort: 3000
+    nodePort: 32036
 
